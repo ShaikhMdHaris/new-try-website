@@ -76,8 +76,8 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h3 className="font-semibold mb-1">Email Us</h3>
-                                    <a href="mailto:contact@innositetechsolutions.com" className="text-slate-400 hover:text-white transition-colors">
-                                        contact@innositetechsolutions.com
+                                    <a href="mailto:innositetechsolutions@gmail.com" className="text-slate-400 hover:text-white transition-colors">
+                                        innositetechsolutions@gmail.com
                                     </a>
                                 </div>
                             </div>
@@ -88,8 +88,8 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h3 className="font-semibold mb-1">Call Us</h3>
-                                    <a href="tel:+91XXXXXXXXXX" className="text-slate-400 hover:text-white transition-colors">
-                                        +91 XXXXXXXXXX
+                                    <a href="tel:+919604022192" className="text-slate-400 hover:text-white transition-colors">
+                                        +91 9604022192
                                     </a>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@ export default function Contact() {
                                         value={formData.name}
                                         onChange={handleChange}
                                         className="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all"
-                                        placeholder="John Doe"
+                                        placeholder="Name"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -137,7 +137,7 @@ export default function Contact() {
                                         value={formData.email}
                                         onChange={handleChange}
                                         className="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all"
-                                        placeholder="john@example.com"
+                                        placeholder="email@example.com"
                                     />
                                 </div>
                             </div>

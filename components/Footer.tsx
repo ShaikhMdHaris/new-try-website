@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Twitter, Instagram, Linkedin, Heart } from "lucide-react";
+import { Instagram, Linkedin, Heart } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -27,10 +27,15 @@ export default function Footer() {
                             Turning Ideas into Intelligent Digital Experiences. We build scalable, secure, and future-ready solutions.
                         </p>
                         <div className="flex gap-4">
-                            {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
+                            {[
+                                { Icon: Instagram, href: "https://www.instagram.com/innosite_tech_solutions2024/" },
+                                { Icon: Linkedin, href: "https://www.linkedin.com/company/innosite-tech-solution/" },
+                            ].map(({ Icon, href }, i) => (
                                 <a
                                     key={i}
-                                    href="#"
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="p-2 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-emerald-400 hover:border-emerald-500/50 transition-all"
                                 >
                                     <Icon className="w-4 h-4" />
@@ -70,13 +75,13 @@ export default function Footer() {
                         <ul className="space-y-4 text-slate-400">
                             <li>India</li>
                             <li>
-                                <a href="mailto:contact@innositetechsolutions.com" className="hover:text-emerald-400 transition-colors">
-                                    contact@innositetechsolutions.com
+                                <a href="mailto:innositetechsolutions@gmail.com" className="hover:text-emerald-400 transition-colors">
+                                    innositetechsolutions@gmail.com
                                 </a>
                             </li>
                             <li>
-                                <a href="tel:+91XXXXXXXXXX" className="hover:text-emerald-400 transition-colors">
-                                    +91 XXXXXXXXXX
+                                <a href="tel:+919604022192" className="hover:text-emerald-400 transition-colors">
+                                    +91 9604022192
                                 </a>
                             </li>
                         </ul>
